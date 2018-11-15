@@ -1,4 +1,4 @@
 #!/bin/bash
-git clone https://github.com/stackstorm/st2-docker
+git clone https://github.com/stackstorm/st2-docker | tee /tmp/log
 cd st2-docker
-make env
+make env | tee -a /tmp/log
